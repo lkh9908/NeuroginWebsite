@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-dark: #696a6d;
+  --clr-light: #8acdd4;
+  --clr-accent: #00b4be;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 0.75rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,0.25),
+}
+
+:root:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 767px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+}
+
+@font-face {
+  font-family: 'harmonyRegCN';
+  src: url('./fonts/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Regular.ttf');
+}
+
+@font-face {
+  font-family: 'harmonyBlackCN';
+  src: url('./fonts/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Black.ttf');
+}
+
+@font-face {
+  font-family: 'harmonyBoldCN';
+  src: url('./fonts/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Bold.ttf');
+}
+
+@font-face {
+  font-family: 'harmonyRegEng';
+  src: url('./fonts/HarmonyOS_Sans/HarmonyOS_Sans_Regular.ttf');
+}
+
+@font-face {
+  font-family: 'harmonyBlackEng';
+  src: url('./fonts/HarmonyOS_Sans/HarmonyOS_Sans_Black.ttf');
+}
+
+@font-face {
+  font-family: 'harmonyBoldEng';
+  src: url('./fonts/HarmonyOS_Sans/HarmonyOS_Sans_Bold.ttf');
+}
+
+/* General */
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Nav Bar */
+header{
+  height: 8vh;
+  display: inline-block;
+}
+
+.logoTop{
+  height:8vh;
+  bottom: 0px;
+}
+
+.navBar {
+  background-color: white;
+  font-size: var(--fs-body);
+  opacity: 0.7;
+}
+
+.navItem {
+  height: 8vh;
+  padding: 0em 1em 0em 1em;
+  margin-left: 0;
+}
+
+.navLink{
+  color: var(--clr-dark);
+  opacity: 0.8;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  font-family: 'harmonyRegCN';
+}
+.navLink:hover {
+  opacity: 1;
+  color: var(--clr-accent);
+}
+
+@media screen and (max-width:767px){
+  .navBar {
+    margin: 0em 0em 0em 0em;
+    font-size: var(--fs-body);
+  }
+  .navItem{
+    padding: 0em 0.3em 0em 0.3em;
+  }
+}
+
+
+
