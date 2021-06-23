@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Neurogin</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Crimson+Pro&family=Hachi+Maru+Pop&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <script src = './index.js'></script>
+</head>
+
+<body>
+  <header> 
+    <nav class="navbar navBar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a href="./index.html">
+          <img class="logo-top" src="./img/logoCNENG.png">
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+        
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-items">
+          <a class="navbar-item navItem navLink" href="./index.html">
+            首页
+          </a>
+          <a class="navbar-item navItem navLink" href="./about.html">
+            关于我们
+          </a>
+          <a class="navbar-item navItem navLink" href="./technology.html">
+            技术方案
+          </a>
+          <a class="navbar-item navItem navLink" href="./contact.html">
+            联系方式
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero is-medium hero-color">
+    <div class="hero-body">
+      <div class="columns">
+        <div class="oval2 column is-one-fifth"></div>
+        <div class="column">
+          <h2 class="title title-me">
+            技术
+          </h2>
+          <h2 class="title title-me">
+            方案
+          </h2>
+        </div>
+    </div>
+  </section>
+
+  <div class='line'></div>
+  <div class="paragraph">
+    <h5>
+      <strong class="main-doc">
+        世界卫生组织将疼痛定义为：“一种与实际或潜在的组织损伤相关的不愉快感觉和情绪情感体验，或与此相似的经历。”疼痛是继心跳、血压、体温、呼吸之后的第五大生命体征。在普通人群中，约1/3患有慢性疼痛（指持续3个月以上的疼痛 fact check）。据国内某知名三家医院2011年全院疼痛状况调查，入院患者疼痛发生率为63.08%，其中重度疼痛占85.78%。
+      </strong>
+    </h5>
+    <br>
+    <br>
+    <br>
+    <h5 class="subtitle subtitle-clr">
+      现有方法
+    </h5>
+    <br>
+    <p class="main-doc">
+      疼痛是五大生命体征中唯一的主观体征，目前尚无客观方法来验证其存在或严重程度。传统疼痛评估方法均需依赖患者主观表达，如数字评定量表(NRS)等。为了评估患者的疼痛状态，医生向患者提出一系列问题，并在0-10的范围内确定疼痛评分，即0=没有疼痛，10=可以想象到的最严重的疼痛。医学界普遍将疼痛程度划分为轻度（0-3分），中度（4-7分）和重度（8-10分）疼痛三个阶梯，各阶梯对应相应的镇痛药物（见图），即疼痛的阶梯治疗。随着技术的进步，现代化疼痛治疗还包括介入治疗、微创治疗等。医生根据患者报告的疼痛状态和病史，确定合适的治疗方案。在治疗方案实施后，再次使用疼痛评分评估治疗效果，以此实现减轻或缓解患者疼痛的目的。
+    </p>
+    <br>
+    <img src="./img/tech-pain.png" alt="图片加载失败" class="tech-img">
+    <p>现有疼痛测量表（NRS疼痛测量表）</p>
+    <br>
+    <br>
+    <h5 class="subtitle subtitle-clr">
+      现有方法的问题
+    </h5>
+    <br>
+    <p class="main-doc">
+      传统方法下，患者只能将目前的疼痛状态与现有的想象或记忆中的疼痛经历进行比较，受主观因素影响，存在较大的个体差异。另外，部分特殊人群，如儿童、老人、ICU患者普遍存在沟通障碍，无法有效地表达疼痛和实施疼痛评估，从而无法得到有效的疼痛管理。主观疼痛评分差异使得镇痛治疗的效果难以评估，难以实现疼痛管理精准化，容易出现镇痛过量或镇痛不足的问题。镇痛过量可能会引起呼吸抑制、便秘、恶心、药物成瘾等问题。镇痛不足则会降低患者对医疗系统的满意度和生活质量，影响患者原发疾病的治疗，增加医疗保健系统成本。
+    </p>
+    <br>
+    <br>
+    <h5 class="subtitle subtitle-clr" id='solution'>
+      我们的解决方案
+    </h5>
+    <br>
+    <p class="main-doc">
+      新源脑科学疼痛管理平台使用自主研发的移动脑电设备获取患者的脑电数据。通过机器学习算法分析患者的脑电波，将患者疼痛程度分为无痛、轻度、中度和重度四级，对应不同的疼痛治疗方案。
+      该解决方案降低了疼痛评估对患者的主观依赖。实现了对疼痛的客观定量、实时与自动化监测，解决了镇痛不足与过量的两难问题，改善了患者的预后，帮助医生做出最佳临床决策。        
+    </p>
+    <br>
+    <br>
+    <h5 class="subtitle subtitle-clr" id='fundation'>
+      基础科学
+    </h5>
+    <br>
+    <p class="main-doc">
+      疼痛信号本质上是神经系统伤害性感受器在受到伤害性刺激后产生的电信号，沿感觉神经轴突传递到脊髓、脑干、丘脑和大脑皮质。因此通过观察大脑活动，能够的到疼痛的有效信息。综合考虑疼痛监测对时间、空间分辨率和经济性的要求，可得出结论脑电信号是疼痛信号唯一可行的生物标记物。
+    </p>
+    <br>
+    <br>
+    <h5 class="subtitle subtitle-clr" id='core'>
+      核心科技
+    </h5>
+    <br>
+    <p class="main-doc">
+      高质量的脑电信号是实现疼痛量化的基石。脑电是uV级的微弱信号，信号强度是心电的千分之一，容易受到人体其他生物电和环境中的电磁辐射干扰。公司自主研发的便携无线脑电采集设备可在复杂电磁环境下采集高质量脑电信号。基于采集到的高质量脑电数据，我们使用前沿的信号处理算法对原始脑电数据进行伪迹消除与降噪。
+
+      新源脑科学已在国内知名医疗机构内开展慢性疼痛患者的脑电采集工作。使用深层卷积神经网络（CNN）对标注的脑电信号进行高效特征抽取，在疼痛量化建模方面， Neurogin使用FFT、深层卷积神经网络（CNN）进行高效特征抽取，multi-label neural classifier则作为下游疼痛量化模型的分类器。        
+    </p>
+
+
+
+
+
+  </div>
+</body>
+
+<footer class = 'footer footer-me'>
+  <div class="columns is-desktop is-variable ">
+    <div class="column is-two-fifths">
+      <img src="./img/logoCNENG.png" class = 'footer-img' alt="">
+    </div>
+    <div class="column is-one-fifth">
+      <p>
+        <a href='./about.html'><strong>关于我们</strong></a>
+      </p>
+      <p>
+        <a href=''>公司简介</a>
+      </p>
+      <p>
+        <a href=''>公司使命</a>
+      </p>
+      <p>
+        <a href=''>发展历程</a>
+      </p>
+      <p>
+        <a href=''>管理团队</a>
+      </p>
+    </div>
+    <div class="column is-one-fifth">
+      <p>
+        <a href='./technology.html'><strong>技术 & 解决方案</strong></a>
+      </p>
+      <p>
+        <a href='./technology.html#solution'>解决方案</a>
+      </p>
+      <p>
+        <a href='./technology.html#fundation'>基础科学</a>
+      </p>
+      <p>
+        <a href='./technology.html#core'>核心技术</a>
+      </p>
+    </div>
+    <div class="column is-one-fifth">
+      <button class="footer-button" onclick="window.location.href='./contact.html'">联系我们</button>
+    </div>
+  </div>
+</footer>

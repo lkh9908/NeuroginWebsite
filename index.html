@@ -1,61 +1,173 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Neurogin</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Crimson+Pro&family=Hachi+Maru+Pop&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-    <link rel="manifest" href="./favicon/site.webmanifest">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Neurogin</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Crimson+Pro&family=Hachi+Maru+Pop&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <script src = './index.js'></script>
 </head>
 
 <body>
-    <header> 
-        <ul class = "navBar">
-            <img src="./img/logoCNENG.png" alt="" class="logoTop">
-            <li class = "navItem">
-                <h4><a href = "" class = "navLink"> 联系方式 </a></h4>
-            </li>
-            <li class = "navItem">
-                <h4><a href = "" class = "navLink"> 技术方案 </a></h4>
-            </li>
-            <li class = "navItem">
-                <h4><a href = "" class = "navLink"> 关于我们 </a></h4>
-            </li>
-            <li class = "navItem">
-                <h4><a href = "" class = "navLink"> 首页 </a></h4>
-            </li>   
-        </ul>
-    </header>
+  <header> 
+    <nav class="navbar navBar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a href="./index.html">
+          <img class="logo-top" src="./img/logoCNENG.png">
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+        
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-items">
+          <a class="navbar-item navItem navlink" href="./index.html">
+            首页
+          </a>
+          <a class="navbar-item navItem navlink" href="./about.html">
+            关于我们
+          </a>
+          <a class="navbar-item navItem navlink" href="./technology.html">
+            技术方案
+          </a>
+          <a class="navbar-item navItem navlink" href="./contact.html">
+            联系方式
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <section class = 'intro'>
-        <div class = "row">
-            <div class = "column left">
-                <div class="oval column left-small"></div>
-                <div class="column right-small">
-                    <h2 class = 'xinyuan'> 新源 </h2>
-                    <h2 class = 'naokexue'> 脑科学 </h2>
-                    <div class = 'intro-body'>
-                        <h3>首家疼痛客观量化创新企业</h3>
-                        <p>以精准脑电采集、人工智能为核心技术，提供疼痛量化解决方案</p>
-                    </div>
-                    <button class = 'about-button'> 关于我们 </button>
-                </div>
+  <section class = 'intro'>
+    <div class = "columns">
+      <div class = "column">
+        <div class="columns">
+          <div class="oval column is-one-fifth"></div>
+          <div class="column">
+            <h1 class = "xinyuan"> 新源 </h1>
+            <h1 class = "naokexue"> 脑科学 </h1>
+            <br>
+            <div class = "intro-body">
+              <h4>首家疼痛客观量化创新企业</h4>
+              <p>以精准脑电采集、人工智能为核心技术，提供疼痛量化解决方案</p>
             </div>
-            <div class="column right">
-                <img src="./img/intro.jpg" class="intro-img" alt="">
+            <button class = "about-button" onclick="window.location.href='./about.html'"> 关于我们 </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <img src="./img/intro.jpg" class="intro-img" alt="">
+      </div>
+    </div>       
+  </section>
+  <br></br>
+  <div class = 'three-intro'>
+    <div class="columns">
+
+      <div class="column is-one-third">
+        <div class="card card-me hover-one">
+          <div class="card-image">
+            <figure class="">
+              <img src="./img/intro-brain.png" alt="Placeholder image">
+            </figure>
+          </div>          
+          <div class="card-content">
+            <div class="content">
+              <h4>脑电采集</h4>
+              <p>完全自主知识产权脑电图采集设备</p>
             </div>
-        </div>       
-    </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="card card-me hover-one">
+          <div class="card-image">
+            <figure class="">
+              <img src="./img/intro-ai.png" alt="Placeholder image">
+            </figure>
+          </div>          
+          <div class="card-content">
+            <div class="content">
+              <h4>人工智能</h4>
+              <p>基于大数据与机器学习的信号处理</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="card card-me hover-one">
+          <div class="card-image">
+            <figure class="">
+              <img src="./img/intro-pain.png" alt="Placeholder image">
+            </figure>
+          </div>          
+          <div class="card-content">
+            <div class="content">
+              <h4>疼痛客观量化</h4>
+              <p>实现疼痛客观量化指导三阶段用药</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  
 </body>
 
-<footer>
-
+<footer class = 'footer footer-me'>
+  <div class="columns is-desktop is-variable ">
+    <div class="column is-two-fifths">
+      <img src="./img/logoCNENG.png" class = 'footer-img' alt="">
+    </div>
+    <div class="column is-one-fifth">
+      <p>
+        <a href='./about.html'><strong>关于我们</strong></a>
+      </p>
+      <p>
+        <a href=''>公司简介</a>
+      </p>
+      <p>
+        <a href=''>公司使命</a>
+      </p>
+      <p>
+        <a href=''>发展历程</a>
+      </p>
+      <p>
+        <a href=''>管理团队</a>
+      </p>
+    </div>
+    <div class="column is-one-fifth">
+      <p>
+        <a href='./technology.html'><strong>技术 & 解决方案</strong></a>
+      </p>
+      <p>
+        <a href='./technology.html#solution'>解决方案</a>
+      </p>
+      <p>
+        <a href='./technology.html#fundation'>基础科学</a>
+      </p>
+      <p>
+        <a href='./technology.html#core'>核心技术</a>
+      </p>
+    </div>
+    <div class="column is-one-fifth">
+      <button class="footer-button" onclick="window.location.href='./contact.html'">联系我们</button>
+    </div>
+  </div>
 </footer>
