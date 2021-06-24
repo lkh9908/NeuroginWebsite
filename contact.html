@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Neurogin</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+
+  <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=4fa41bb63e2b297884e1470d3ebb9d88"></script>
+</head>
+
+<body>
+  <header> 
+    <nav class="navbar navBar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a href="./index.html">
+          <img class="logo-top" src="./img/logoCNENG.png">
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+        
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-items">
+          <a class="navbar-item navItem navLink" href="./index.html">
+            首页
+          </a>
+          <a class="navbar-item navItem navLink" href="./about.html">
+            关于我们
+          </a>
+          <a class="navbar-item navItem navLink" href="./technology.html">
+            技术方案
+          </a>
+          <a class="navbar-item navItem navLink" href="./contact.html">
+            联系方式
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero is-medium hero-color">
+    <div class="hero-body">
+      <div class="columns">
+        <div class="oval2 column is-one-fifth"></div>
+        <div class="column">
+          <h2 class="title title-me">
+            联系
+          </h2>
+          <h2 class="title title-me">
+            我们
+          </h2>
+        </div>
+    </div>
+  </section>
+
+  <div class = 'contact-body'>
+    <div class="columns">
+        <div class="column">
+
+          <div id="map"></div> 
+          
+          <h5>公司地址：</h5>
+          <p>四川成都高新孵化园天河孵化器B座4F-07</p>
+          <br>
+          <h5>联系电话：</h5>
+          <p>+86 28 8533 6082</p>
+        </div>
+        <div class="column">
+          <img src="./img/contact-img.png" alt="图片加载失败" class="contact-img">
+          <h4>欢迎您联系我们</h4>
+          <img src="./img/contact-QR.png" alt="图片加载失败" class="contact-img">
+          <h4>HR邮箱：hiring@neurogin.com</h4>
+        </div>
+      </div>    
+  </div>
+</body>
+
+<script type="text/javascript">
+    
+</script>
+
+<footer class = 'footer footer-me'>
+  <div class="columns is-desktop is-variable ">
+    <div class="column is-two-fifths">
+      <img src="./img/logoCNENG.png" class = 'footer-img' alt="">
+    </div>
+    <div class="column is-one-fifth">
+      <p>
+        <a href='./about.html'><strong>关于我们</strong></a>
+      </p>
+      <p>
+        <a href=''>公司简介</a>
+      </p>
+      <p>
+        <a href=''>公司使命</a>
+      </p>
+      <p>
+        <a href=''>发展历程</a>
+      </p>
+      <p>
+        <a href=''>管理团队</a>
+      </p>
+    </div>
+    <div class="column is-one-fifth">
+      <p>
+        <a href='./technology.html'><strong>技术 & 解决方案</strong></a>
+      </p>
+      <p>
+        <a href='./technology.html#solution'>解决方案</a>
+      </p>
+      <p>
+        <a href='./technology.html#fundation'>基础科学</a>
+      </p>
+      <p>
+        <a href='./technology.html#core'>核心技术</a>
+      </p>
+    </div>
+    <div class="column is-one-fifth">
+      <button class="footer-button" onclick="window.location.href='./contact.html'">联系我们</button>
+    </div>
+  </div>
+
+  <div class = footer-line></div>
+  <div class="footer-end">
+    <div class="columns is-desktop is-variable footer-end-left">
+      <div class="column is-one-third">
+        <br>
+        @2021 NEUROGIN
+      </div>
+      <div class="column is-one-third footer-end-mid">
+        <br>
+        蜀ICP备XXXXX | 四川新源电子生物有限公司 | All Rights Reserved
+      </div>
+      <div class="column is-one-third footer-end-right">
+        <span class="icon is-large">
+          <img src="./img/linkedln-icon.png" alt="">
+        </span>
+        <span class="icon is-large">
+          <img src="./img/wechat-icon.png" alt="">
+        </span>
+        <span class="icon is-large">
+          <img src="./img/weibo-icon.png" alt="">
+        </span>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src = './index.js'></script>
+<script src = './map.js'></script>
+</html>

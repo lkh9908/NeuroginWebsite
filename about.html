@@ -13,7 +13,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
   <link rel="manifest" href="./favicon/site.webmanifest">
-  <script src = './index.js'></script>
 </head>
 
 <body>
@@ -85,7 +84,7 @@
     <h5 class="subtitle subtitle-clr" id='core'>
       公司发展大事记
     </h5>
-    <img src="./img/timeline.png" alt="图片加载失败">
+    <canvas id='timeline'>Timeline</canvas>
     <br>
     <br>
     <br>
@@ -101,7 +100,7 @@
               <div class='columns'>
                 <div class="card-image column">
                   <figure class="">
-                    <img src="./img/ceo.png" alt="Placeholder image">
+                    <img src="./img/ceo.png" alt="Placeholder image" class="namecard-img">
                   </figure>
                 </div>          
                 <div class="card-content column">
@@ -113,7 +112,10 @@
                     <h4>CEO</h4>
                   </div>
                 </div>
-              </div>  
+              </div>
+              <p>北京大学经济学学士</p>
+              <p>曾在实业公司、证券公司、股权投资基金</p>
+              <p>担任董事会秘书、投资总监等职务，具有丰富的公司治理、融资工作经验</p>  
             </div>
           </div>
 
@@ -122,7 +124,7 @@
               <div class='columns'>
                 <div class="card-image column">
                   <figure class="">
-                    <img src="./img/cto.png" alt="Placeholder image">
+                    <img src="./img/cto.png" alt="Placeholder image" class="namecard-img">
                   </figure>
                 </div>          
                 <div class="card-content column">
@@ -134,7 +136,11 @@
                     <h4>CTO</h4>
                   </div>
                 </div>
-              </div>  
+              </div>
+              <p>北京大学理学学士，工学硕士</p>
+              <p>北京大学移动数字医疗系统教育部工程研究中心早期成员</p>
+              <p>成都比特律动创始人</p>
+              <p>Nuance首席研究工程师</p>  
             </div>
           </div>
     
@@ -151,7 +157,7 @@
                 <div class='columns'>
                   <div class="card-image column">
                     <figure class="">
-                      <img src="./img/coo.png" alt="Placeholder image">
+                      <img src="./img/coo.png" alt="Placeholder image" class="namecard-img">
                     </figure>
                   </div>          
                   <div class="card-content column">
@@ -163,7 +169,10 @@
                       <h4>COO</h4>
                     </div>
                   </div>
-                </div>  
+                </div> 
+                <p>中山大学理学、经济双学士</p>
+                <p>公司主要创始人</p>
+                <p>具有近20年的管理及对外关系经验</p> 
               </div>
             </div>
     
@@ -172,7 +181,7 @@
                 <div class='columns'>
                   <div class="card-image column">
                     <figure class="">
-                      <img src="./img/cmo.jpg" alt="Placeholder image">
+                      <img src="./img/cmo.jpg" alt="Placeholder image" class="namecard-img">
                     </figure>
                   </div>          
                   <div class="card-content column">
@@ -184,7 +193,10 @@
                       <h4>CMO</h4>
                     </div>
                   </div>
-                </div>  
+                </div> 
+                <p>四川大学理学学士</p>
+                <p>英国布里斯托大学理学硕士</p>
+                <p>GE医疗大区产品经理、非公医疗大客户经理</p>
               </div>
             </div>
 
@@ -236,4 +248,34 @@
       <button class="footer-button" onclick="window.location.href='./contact.html'">联系我们</button>
     </div>
   </div>
+
+  <div class = footer-line></div>
+  <div class="footer-end">
+    <div class="columns is-desktop is-variable footer-end-left">
+      <div class="column is-one-third">
+        <br>
+        @2021 NEUROGIN
+      </div>
+      <div class="column is-one-third footer-end-mid">
+        <br>
+        蜀ICP备XXXXX | 四川新源电子生物有限公司 | All Rights Reserved
+      </div>
+      <div class="column is-one-third footer-end-right">
+        <span class="icon is-large">
+          <img src="./img/linkedln-icon.png" alt="">
+        </span>
+        <span class="icon is-large">
+          <img src="./img/wechat-icon.png" alt="">
+        </span>
+        <span class="icon is-large">
+          <img src="./img/weibo-icon.png" alt="">
+        </span>
+        
+      </div>
+    </div>
+  </div>
 </footer>
+
+<script src = './index.js'></script>
+<script src = './timeline.js'></script>
+</html>

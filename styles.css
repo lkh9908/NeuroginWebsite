@@ -323,6 +323,46 @@ header{
   }
 }
 
+.footer-line{
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  height: 2px;
+  background-color: var(--clr-light);
+}
+
+.footer-end {
+  margin: 1vh 10vw auto 10vw;
+  font-family: 'harmonyRegCN';
+  color: var(--clr-dark);
+}
+
+.footer-end-left{
+  text-align: left;
+}
+
+.footer-end-mid{
+  text-align: center;
+}
+
+.footer-end-right{
+  text-align: right;
+}
+
+@media screen and (max-width:768px){
+  .footer-end-left{
+    text-align: center;
+  }
+  
+  .footer-end-mid{
+    text-align: center;
+  }
+  
+  .footer-end-right{
+    text-align: center;
+  }
+}
+
 /* Other Pages */
 .hero-color{
   background: linear-gradient(to right, var(--clr-light), var(--clr-accent));
@@ -361,20 +401,57 @@ header{
 }
 
 .tech-img {
-  height: 15vh;
+  height: 20vh;
 }
-
-/* .namecard {
-  width: 25vw !important;
-} */
 
 @media screen and (max-width:1024px){
   .delete-phone {
     display: none;
   }
-  
 }
 
+.namecard {
+  height: 50vh !important;
+  padding: 3em !important;
+}
+
+.namecard-img {
+  width:15vw;
+}
+
+@media screen and (max-width:1024px){
+  .namecard-img {
+    width:35vw;
+  }
+  .namecard {
+    height: 60vh !important;
+    padding: 1em !important;
+    max-height: 40em;
+  }
+}
+
+.contact-body {
+  margin: 5vh 10vw;
+  text-align: center;
+}
+
+.contact-img {
+  width: 40%;
+}
+
+#map{
+  margin: 5vh auto;
+  height: 40vh;
+  width: 30vw;
+}
+
+@media screen and (max-width:1024px){
+  #map{
+    margin: auto;
+    height: 30vh;
+    width: 60vw;
+  }
+}
 
 /* effects */
 .hover-one {
