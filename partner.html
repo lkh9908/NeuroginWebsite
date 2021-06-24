@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Crimson+Pro&family=Hachi+Maru+Pop&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+
   <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
@@ -30,19 +31,19 @@
         
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-items">
-          <a class="navbar-item navItem navlink" href="./index.html">
+          <a class="navbar-item navItem navLink" href="./index.html">
             首页
           </a>
-          <a class="navbar-item navItem navlink" href="./about.html">
+          <a class="navbar-item navItem navLink" href="./about.html">
             关于我们
           </a>
-          <a class="navbar-item navItem navlink" href="./technology.html">
+          <a class="navbar-item navItem navLink" href="./technology.html">
             技术方案
           </a>
           <a class="navbar-item navItem navlink" href="./partner.html">
             合作伙伴
           </a>
-          <a class="navbar-item navItem navlink" href="./contact.html">
+          <a class="navbar-item navItem navLink" href="./contact.html">
             联系方式
           </a>
         </div>
@@ -50,85 +51,48 @@
     </nav>
   </header>
 
-  <section class = 'intro'>
-    <div class = "columns">
-      <div class = "column">
-        <div class="columns">
-          <div class="oval column is-one-fifth"></div>
-          <div class="column">
-            <h1 class = "xinyuan"> 新源 </h1>
-            <h1 class = "naokexue"> 脑科学 </h1>
-            <br>
-            <div class = "intro-body">
-              <h4>首家疼痛客观量化创新企业</h4>
-              <p>以精准脑电采集、人工智能为核心技术，提供疼痛量化解决方案</p>
-            </div>
-            <button class = "about-button" onclick="window.location.href='./about.html'"> 关于我们 </button>
-          </div>
+  <section class="hero is-medium hero-color">
+    <div class="hero-body">
+      <div class="columns">
+        <div class="oval2 column is-one-fifth"></div>
+        <div class="column">
+          <h2 class="title title-me">
+            合作
+          </h2>
+          <h2 class="title title-me">
+            伙伴
+          </h2>
         </div>
-      </div>
-
-      <div class="column">
-        <img src="./img/intro.jpg" class="intro-img" alt="">
-      </div>
-    </div>       
-  </section>
-  <br></br>
-  <div class = 'three-intro'>
-    <div class="columns">
-
-      <div class="column is-one-third">
-        <div class="card card-me hover-one">
-          <div class="card-image">
-            <figure class="">
-              <img src="./img/intro-brain.png" alt="Placeholder image">
-            </figure>
-          </div>          
-          <div class="card-content">
-            <div class="content">
-              <h4>脑电采集</h4>
-              <p>完全自主知识产权脑电图采集设备</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-one-third">
-        <div class="card card-me hover-one">
-          <div class="card-image">
-            <figure class="">
-              <img src="./img/intro-ai.png" alt="Placeholder image">
-            </figure>
-          </div>          
-          <div class="card-content">
-            <div class="content">
-              <h4>人工智能</h4>
-              <p>基于大数据与机器学习的信号处理</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-one-third">
-        <div class="card card-me hover-one">
-          <div class="card-image">
-            <figure class="">
-              <img src="./img/intro-pain.png" alt="Placeholder image">
-            </figure>
-          </div>          
-          <div class="card-content">
-            <div class="content">
-              <h4>疼痛客观量化</h4>
-              <p>实现疼痛客观量化指导三阶段用药</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
+  </section>
 
+  <div class="partner-body">
+      <div class="partner-header">
+        <div class="partner-line">
+        </div>
+        <p>新源脑科学很荣幸得到了一些权威大学和医院的支持。</p>
+        <p>在他们的支持下，新源一直在积极开发我们的新技术。</p>
+      </div>
+      
+      <div class="columns">
+        <div class="column">
+          <img src="./img/pk-uni.png" alt="图片加载失败" class="partner-img">
+        </div>
+        <div class="column">
+            <img src="./img/hz-uni.jpg" alt="图片加载失败" class="partner-img">
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <img src="./img/huaxi-hos.png" alt="图片加载失败" class="partner-img">
+        </div>
+        <div class="column">
+            <img src="./img/texas-uni.png" alt="图片加载失败" class="partner-img">
+        </div>
+      </div>
   </div>
-  
+
 </body>
 
 <footer class = 'footer footer-me'>
@@ -171,7 +135,7 @@
       <button class="footer-button" onclick="window.location.href='./contact.html'">联系我们</button>
     </div>
   </div>
-  
+
   <div class = footer-line></div>
   <div class="footer-end">
     <div class="columns is-desktop is-variable footer-end-left">

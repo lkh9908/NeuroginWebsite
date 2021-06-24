@@ -453,6 +453,38 @@ header{
   }
 }
 
+.partner-body {
+  margin:10vh 10vw 10vh 10vw;
+  text-align: center;
+}
+
+.partner-header{
+  margin-bottom: 10vh;
+}
+
+.partner-line {
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-bottom: 2vh;
+  width: 20%;
+  height: 2px;
+  background-color: var(--clr-light);
+}
+
+.partner-img {
+  margin: 2vh auto;
+  width: 25vw;
+}
+
+
+@media screen and (max-width:1024px){
+  .partner-img {
+    margin: 2vh auto;
+    width: 45vw;
+  }
+}
+
+
 /* effects */
 .hover-one {
   cursor: pointer;

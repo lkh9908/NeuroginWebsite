@@ -6,3 +6,12 @@ marker = new AMap.Marker({
     position: [104.067102,30.574947],  //标记的地图坐标 
     map: map
 });
+
+AMap.plugin(['AMap.ToolBar', 'AMap.Scale', 'AMap.MapType'], function() {
+    toolBar = new AMap.ToolBar();  //工具条
+    scale = new AMap.Scale();    //比例尺
+    mapType = new AMap.MapType();   //地图种类
+    map.addControl(toolBar);
+    map.addControl(scale);
+    map.addControl(mapType);
+    })
