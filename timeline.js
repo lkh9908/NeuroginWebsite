@@ -35,6 +35,7 @@ texts[17] = '公司电生理记录设备';
 texts[18] = '成功获美国国立卫生研究院资助';
 texts[19] = '参与术中电生理监测研究';
 
+// try to see if git is still ok
 if(canvas.getContext){
     // desktop screen
     if (w > 1100) {
