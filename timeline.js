@@ -10,29 +10,29 @@ var years = [2021, 2020, 2019, 2018, 2017, 2016, 2015]
 var texts = [];
 texts[0] = '公司无线脑电图设备获得NMPA批准';
 texts[1] = '开始临床疼痛数据采集';
-
+ 
 texts[2] = '疼痛客观量化项目正式立项';
 texts[3] = '国内知名投资人领投3000万元人民币';
 texts[4] = '当前估值1.5亿元人民币';
-
-texts[5] = '公司与与四川大学华西医院';
+ 
+texts[5] = '公司与四川大学华西医院';
 texts[6] = '合作研究传感器项目';
 texts[7] = '获得四川省科技厅重大科技专项';
-
-texts[8] = '公司专家团队疼痛领域发表多篇论文';
+ 
+texts[8] = '专家团队于疼痛领域发表多篇论文';
 texts[9] = '连续3年受邀参加世界神经科学年会';
-texts[10] = '公司项目获得四川省委书记彭清华批示';
-
+texts[10] = '传感器项目获四川省委书记彭清华批示';
+ 
 texts[11] = '公司首席科学家彭远波教授';
 texts[12] = '获聘四川大学华西医院客座教授';
-
+ 
 texts[13] = '美国德州大学动物实验室';
-texts[14] = '使用公司公司无线脑电产品';
+texts[14] = '使用公司无线脑电产品';
 texts[15] = '用于疼痛机理研究';
-texts[16] = '此事被美国国家广播公司报道';
-
+texts[16] = '获广泛关注并被美国国家广播公司报道';
+ 
 texts[17] = '公司电生理记录设备';
-texts[18] = '获得美国国立卫生研究院资助';
+texts[18] = '成功获美国国立卫生研究院资助';
 texts[19] = '参与术中电生理监测研究';
 
 if(canvas.getContext){
@@ -67,10 +67,10 @@ if(canvas.getContext){
         // year and text
         c.fillStyle="rgb(105,106,109)";
         if (x > 0){
-            c.fillText(texts[text],(w/2)+(60*x),i+160,600);
+            c.fillText(texts[text],(w/2)+(150*x),i+110,600);
             c.fillText(years[year],(w/2)+(80*-x),i+130,600);
         } else {
-            c.fillText(texts[text],(w/2)+(400*x),i+160,600);
+            c.fillText(texts[text],(w/2)+(430*x),i+100,600);
             c.fillText(years[year],(w/2)+(50*-x),i+130,600);
         }
 
@@ -80,9 +80,9 @@ if(canvas.getContext){
         if (text == 0 || text == 11){
             text++;
             if (x > 0){
-                c.fillText(texts[text],(w/2)+(60*x),i+200,1000);
+                c.fillText(texts[text],(w/2)+(150*x),i+140,1000);
             } else {
-                c.fillText(texts[text],(w/2)+(400*x),i+200,1000);
+                c.fillText(texts[text],(w/2)+(430*x),i+130,1000);
             }
         }
 
@@ -90,15 +90,15 @@ if(canvas.getContext){
         if (text == 2 || text == 5 || text == 8 || text == 17){
             text++;
             if (x > 0){
-                c.fillText(texts[text],(w/2)+(60*x),i+200,1000);
+                c.fillText(texts[text],(w/2)+(150*x),i+140,1000);
             } else {
-                c.fillText(texts[text],(w/2)+(400*x),i+200,1000);
+                c.fillText(texts[text],(w/2)+(430*x),i+130,1000);
             }
             text++;
             if (x > 0){
-                c.fillText(texts[text],(w/2)+(60*x),i+240,1000);
+                c.fillText(texts[text],(w/2)+(150*x),i+170,1000);
             } else {
-                c.fillText(texts[text],(w/2)+(400*x),i+240,1000);
+                c.fillText(texts[text],(w/2)+(430*x),i+160,1000);
             }
         }
 
@@ -106,21 +106,21 @@ if(canvas.getContext){
         if (text == 13){
             text++;
             if (x > 0){
-                c.fillText(texts[text],(w/2)+(60*x),i+200,1000);
+                c.fillText(texts[text],(w/2)+(150*x),i+140,1000);
             } else {
-                c.fillText(texts[text],(w/2)+(400*x),i+200,1000);
+                c.fillText(texts[text],(w/2)+(430*x),i+130,1000);
             }
             text++;
             if (x > 0){
-                c.fillText(texts[text],(w/2)+(60*x),i+240,1000);
+                c.fillText(texts[text],(w/2)+(150*x),i+170,1000);
             } else {
-                c.fillText(texts[text],(w/2)+(400*x),i+240,1000);
+                c.fillText(texts[text],(w/2)+(430*x),i+160,1000);
             }
             text++;
             if (x > 0){
-                c.fillText(texts[text],(w/2)+(60*x),i+280,1000);
+                c.fillText(texts[text],(w/2)+(150*x),i+200,1000);
             } else {
-                c.fillText(texts[text],(w/2)+(400*x),i+280,1000);
+                c.fillText(texts[text],(w/2)+(430*x),i+190,1000);
             }
             
         }
