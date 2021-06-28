@@ -38,11 +38,11 @@ texts[19] = '参与术中电生理监测研究';
 // try to see if git is still ok
 if(canvas.getContext){
     // desktop screen
-    if (w > 1100) {
+    if (w > 800) {
      var c= canvas.getContext('2d');
      c.fillStyle="rgb(0,180,180)";
      c.strokeStyle="rgb(0,180,180)";
-     c.font = '1.1rem Arial'
+     c.font = '1.05rem Arial'
 
      let x = 1;
      let text = 0;
@@ -71,7 +71,7 @@ if(canvas.getContext){
             c.fillText(texts[text],(w/2)+(150*x),i+110,600);
             c.fillText(years[year],(w/2)+(80*-x),i+130,600);
         } else {
-            c.fillText(texts[text],(w/2)+(430*x),i+100,600);
+            c.fillText(texts[text],(w/2)+(410*x),i+100,600);
             c.fillText(years[year],(w/2)+(50*-x),i+130,600);
         }
 
@@ -83,7 +83,7 @@ if(canvas.getContext){
             if (x > 0){
                 c.fillText(texts[text],(w/2)+(150*x),i+140,1000);
             } else {
-                c.fillText(texts[text],(w/2)+(430*x),i+130,1000);
+                c.fillText(texts[text],(w/2)+(410*x),i+130,1000);
             }
         }
 
@@ -93,13 +93,13 @@ if(canvas.getContext){
             if (x > 0){
                 c.fillText(texts[text],(w/2)+(150*x),i+140,1000);
             } else {
-                c.fillText(texts[text],(w/2)+(430*x),i+130,1000);
+                c.fillText(texts[text],(w/2)+(410*x),i+130,1000);
             }
             text++;
             if (x > 0){
                 c.fillText(texts[text],(w/2)+(150*x),i+170,1000);
             } else {
-                c.fillText(texts[text],(w/2)+(430*x),i+160,1000);
+                c.fillText(texts[text],(w/2)+(410*x),i+160,1000);
             }
         }
 
@@ -109,19 +109,19 @@ if(canvas.getContext){
             if (x > 0){
                 c.fillText(texts[text],(w/2)+(150*x),i+140,1000);
             } else {
-                c.fillText(texts[text],(w/2)+(430*x),i+130,1000);
+                c.fillText(texts[text],(w/2)+(410*x),i+130,1000);
             }
             text++;
             if (x > 0){
                 c.fillText(texts[text],(w/2)+(150*x),i+170,1000);
             } else {
-                c.fillText(texts[text],(w/2)+(430*x),i+160,1000);
+                c.fillText(texts[text],(w/2)+(410*x),i+160,1000);
             }
             text++;
             if (x > 0){
                 c.fillText(texts[text],(w/2)+(150*x),i+200,1000);
             } else {
-                c.fillText(texts[text],(w/2)+(430*x),i+190,1000);
+                c.fillText(texts[text],(w/2)+(410*x),i+190,1000);
             }
             
         }

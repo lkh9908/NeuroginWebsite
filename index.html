@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Welcome to Neurogin</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="carousel.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Crimson+Pro&family=Hachi+Maru+Pop&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
@@ -16,7 +17,7 @@
 
 <body>
   <header> 
-    <nav class="navbar navBar" role="navigation" aria-label="main navigation">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a href="./index.html">
           <img class="logo-top" src="./img/logoCNENG.png">
@@ -30,19 +31,19 @@
         
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-items">
-          <a class="navbar-item navItem navlink" href="./index.html">
+          <a class="navbar-item navItem" href="./index.html">
             首页
           </a>
-          <a class="navbar-item navItem navlink" href="./about.html">
+          <a class="navbar-item navItem" href="./about.html">
             关于我们
           </a>
-          <a class="navbar-item navItem navlink" href="./technology.html">
+          <a class="navbar-item navItem" href="./technology.html">
             技术方案
           </a>
-          <a class="navbar-item navItem navlink" href="./partner.html">
+          <a class="navbar-item navItem" href="./partner.html">
             合作伙伴
           </a>
-          <a class="navbar-item navItem navlink" href="./contact.html">
+          <a class="navbar-item navItem" href="./contact.html">
             联系方式
           </a>
         </div>
@@ -69,11 +70,46 @@
       </div>
 
       <div class="column">
-        <img src="./img/intro.jpg" class="intro-img" alt="">
+        <img src="./img/intro.jpg" class="intro-img" alt="图片加载失败">
       </div>
     </div>       
   </section>
-  <br></br>
+
+  <div class="gallery js-flickity"
+  data-flickity-options='{ "wrapAround": true }'>
+  <div class="gallery-cell">
+    <div class="columns">
+      <div class="column">
+        <h5>我国慢性疼痛者人数超过</h5>
+        <h1>3亿</h1>
+        <h5>平均发病率为22.9%</h5>
+      </div>
+      <div class="column">
+        <h5>慢性疼痛者的缓解率不超过</h5>
+        <h1>20%</h1>
+        <h5>疼痛者就诊率不超过60%</h5>
+      </div>
+      <div class="column">
+        <h5>人均花费近</h5>
+        <h1>￥5000</h1>
+        <h5>6个月内花费总额</h5>
+      </div>
+    </div>
+  </div>
+  <div class="gallery-cell">
+    <img src="./img/WHO-pain-relief-ladder.png" alt="">
+  </div>
+  <div class="gallery-cell">
+    <img src="./img/logoCNENG.png" alt="">
+  </div>
+  <div class="gallery-cell">
+    <img src="./img/logoCNENG.png" alt="">
+  </div>
+  <div class="gallery-cell">
+    <img src="./img/logoCNENG.png" alt="">
+  </div>
+</div>
+
   <div class = 'three-intro'>
     <div class="columns">
 
@@ -200,4 +236,5 @@
 </footer>
 
 <script src = './index.js'></script>
+<script src = './carousel.js'></script>
 </html>
