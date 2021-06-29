@@ -38,7 +38,7 @@ texts[19] = '参与术中电生理监测研究';
 // try to see if git is still ok
 if(canvas.getContext){
     // desktop screen
-    if (w > 800) {
+    if (w > 750) {
      var c= canvas.getContext('2d');
      c.fillStyle="rgb(0,180,180)";
      c.strokeStyle="rgb(0,180,180)";
