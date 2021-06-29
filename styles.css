@@ -17,7 +17,7 @@
   --fs-h3: 2.25rem;
   --fs-h4: 1.25rem;
   --fs-h5: 1rem;
-  --fs-body: 0.75rem;
+  --fs-body: 1rem;
 
   --bs: 0.25em 0.25em 0.75em rgba(0,0,0,0.25),
 }
@@ -248,6 +248,10 @@ header{
   border-radius: 50px !important;
 }
 
+.card-me:hover {
+  cursor: default !important;
+}
+
 /* Footer */
 
 .footer-me {
@@ -366,6 +370,10 @@ header{
   color: rgb(255, 255, 255, 0.9) !important;
 }
 
+.hero-sub {
+  color: rgb(255, 255, 255, 0.9) !important;
+}
+
 .oval2{
   border-radius: 90px / 90px;
   background:rgb(255, 255, 255, 0.9);
@@ -382,7 +390,13 @@ header{
 }
 
 .paragraph {
-  margin: 3vh 10vw 10vh 10vw;
+  margin: 3vh 20vw 10vh 20vw;
+}
+
+@media screen and (max-width:1024px){
+  .paragraph {
+    margin: 3vh 10vw 10vh 10vw;
+  }  
 }
 
 .subtitle-clr {
@@ -508,6 +522,82 @@ header{
   text-decoration: none;
   cursor: pointer;
 }
+
+/* read more */
+.text {
+  font-size: 24px;
+}
+.moreText {
+  display: none;
+}
+.read-more-btn {
+  background-color: rgb(255, 255, 255, 0.9);
+  color: var(--clr-accent);
+  font-size: var(--fs-body);
+  height: 5vh;
+  width: 10vw;
+  margin-top: 10px;
+  border-radius: 12px;
+  border-style: none;
+  -webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.read-more-btn:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+}
+.text.show-more .moreText {
+  display: inline;
+}
+.text.show-more .dots {
+  display: none;
+}
+
+/* technology page, hover icons */
+
+.choice {
+  display: inline-block;
+  text-align: center;
+  width: 10vw;
+  margin: auto 2vw auto 2vw;
+}
+
+.choice:hover {
+  cursor: pointer;
+}
+
+.choice img {
+  max-height: 10vh;
+}
+
+@media screen and (max-width:1300px){
+  .choice {
+    width: 15vw;
+    margin: auto 6vw auto 6vw;
+  }  
+}
+
+.part1 {
+  display: inline-block;
+  margin-top: 5vh;
+}
+
+.part2 {
+  display: none;
+  margin-top: 5vh;
+}
+
+.part3 {
+  display: none;
+  margin-top: 5vh;
+}
+
+.part4 {
+  display: none;
+  margin-top: 5vh;
+}
+
+/* map */
 
 #map{
   margin: 5vh auto 5vh auto;

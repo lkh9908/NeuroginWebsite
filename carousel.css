@@ -150,9 +150,10 @@ http://flickity.metafizzy.co
   }
   
   .gallery-cell {
-    width: 66%;
-    height: 60vh;
+    width: 75vw;
+    height: 43vh;
     margin-right: 10px;
+    padding: 3em;
     background: white;
     counter-increment: gallery-cell;
     border-style: solid;
@@ -160,74 +161,47 @@ http://flickity.metafizzy.co
     text-align: center;
   }
 
-  .gallery-cell h1 {
+  .carousel-footer {
+    text-align: left;
+    position: absolute;
+    left: 20px;
+    bottom: 5px;
+  }
+  
+@media screen and (min-width:1300px){
+  .gallery-cell {
+    width: 70vw;
+    height: 40vh;
+    padding: 4em;
+  }
+}
+
+@media screen and (max-width:1023px){
+  .gallery-cell {
+    width: 80vw;
+    height: 70vh;
+    padding: 1em;
+  }
+}
+
+@media screen and (max-height:780px){
+  .gallery-cell {
+    width: 90vw;
+    height: 90vh;
+    padding: 0.5em;
+  }
+}
+
+  .gallery-cell h2 {
     color: #00b4be;
   }
   
-  /* cell number */
-  .gallery-cell:before {
-    display: block;
-    text-align: center;
-    content: counter(gallery-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
-  }
-  
+
   *, *::before, *::after {
 	box-sizing: border-box;
 }
 
-
-
-
-
-
-
-body {
-	padding: 0;
-	margin: 0;
-}
-
-.progress-bar {
-	position: relative;
-	width: 500px;
-	height: 3em;
-	background-color: #111;
-	border-radius: 1.5em;
-	color: white;
-}
-
-.progress-bar::before {
-	content: attr(data-label);
-	display: flex;
-	align-items: center;
-	position: absolute;
-	left: .5em;
-	top: .5em;
-	bottom: .5em;
-	width: calc(var(--width, 0) * 1%);
-	min-width: 2rem;
-	max-width: calc(100% - 1em);
-	background-color: #069;
-	border-radius: 1em;
-	padding: 1em;
-}
-
-.side-links {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-
-.side-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  margin-bottom: 10px;
-  color: white;
-  width: 180px;
-  padding: 10px 0;
-  border-radius: 10px;
+.ladder {
+  height: 100%;
+  width: 100%;
 }
