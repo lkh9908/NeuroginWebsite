@@ -540,8 +540,12 @@ header{
   border-style: none;
   padding: 0px;
   float: right;
-  /* -webkit-transition: .5s ease-in-out;
-	transition: .5s ease-in-out; */
+  -webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+
+.read-more-btn:hover {
+  transform: translateY(7px);
 }
 
 @media screen and (max-width:680px){
