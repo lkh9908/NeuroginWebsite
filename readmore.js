@@ -3,9 +3,11 @@ const text = document.querySelector(".text");
 
 readMoreBtn.addEventListener("click", (e) => {
   text.classList.toggle("show-more");
-  if (readMoreBtn.innerText === "更多") {
-    readMoreBtn.innerText = "收起";
+  if (readMoreBtn.firstChild.classList.contains('fa-angle-double-down')) {
+    readMoreBtn.firstChild.classList.remove('fa-angle-double-down');
+    readMoreBtn.firstChild.classList.add('fa-angle-double-up');
   } else {
-    readMoreBtn.innerText = "更多";
+    readMoreBtn.firstChild.classList.remove('fa-angle-double-up');
+    readMoreBtn.firstChild.classList.add('fa-angle-double-down');
   }
 });

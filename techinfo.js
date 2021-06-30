@@ -1,7 +1,7 @@
-var icon1 = document.querySelector('.tech-icon1');
-var icon2 = document.querySelector('.tech-icon2');
-var icon3 = document.querySelector('.tech-icon3');
-var icon4 = document.querySelector('.tech-icon4');
+var icon1 = document.querySelector('#tech1');
+var icon2 = document.querySelector('#tech2');
+var icon3 = document.querySelector('#tech3');
+var icon4 = document.querySelector('#tech4');
 
 var part1 = document.querySelector('.part1');
 var part2 = document.querySelector('.part2');
