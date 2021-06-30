@@ -13,6 +13,7 @@ canvas.height = h;
 
 c.fillStyle="rgb(105,106,109)";
 c.strokeStyle="rgb(0,180,180)";
+c.lineWidth = 3;
 
 
 let textMargin = 0
