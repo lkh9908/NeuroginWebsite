@@ -124,10 +124,10 @@ http://flickity.metafizzy.co
 
 .flickity-page-dots .dot {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 1vw;
+  height: 1vw;
   margin: 0 8px;
-  background: #333;
+  background: #00b4be;
   border-radius: 50%;
   filter: alpha(opacity=25); /* IE8 */
   opacity: 0.25;
@@ -145,7 +145,7 @@ http://flickity.metafizzy.co
 
 
 .gallery {
-  background: white;
+  /* background: white; */
   margin: 15vh auto 15vh auto;
 }
 
@@ -154,12 +154,14 @@ http://flickity.metafizzy.co
   height: 75vh;
   margin-right: 2vw;
   padding: 1.5vw;
-  background: white;
+  /* background: white; */
   counter-increment: gallery-cell;
   border-style: solid;
   border-color: rgb(138, 205, 212, 0.5);
   text-align: center;
+  color: black;
 }
+
 
 #pain-noladder {
   display: none;
@@ -189,6 +191,19 @@ http://flickity.metafizzy.co
   padding: 10vh 5vw 10vh 5vw;
 }
 
+.cell1::after {
+  content: "";
+  background-image: url(./img/cells.jpeg);
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
 
 @media screen and (min-width:1000px){
   .cell1 {
@@ -196,8 +211,38 @@ http://flickity.metafizzy.co
   }
 }
 
+.cell2{
+  padding: 0px;
+}
+
+.cell2::after {
+  content: "";
+  background-image: url(./img/stair.jpeg);
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
 .cell3 {
   padding: 10vh 10vw 10vh 10vw;
+}
+
+.cell3::after {
+  content: "";
+  background-image: url(./img/hospital.jpeg);
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 
 .gallery-cell h6 {
@@ -234,26 +279,34 @@ http://flickity.metafizzy.co
 box-sizing: border-box;
 }
 
+.cell1-col {
+  background-color: rgb(253, 249, 249);
+  padding: 3vh;
+}
+
 @media screen and (min-width:780px){
   .top-left {
-    border-right: solid;
+    border: solid;
     border-color: rgb(138, 205, 212, 0.5);
+    background-color: rgb(248, 192, 192);
   }
   
   .top-right {
-    border-bottom: none;
+    border: solid;
     border-color: rgb(138, 205, 212, 0.5);
+    background-color: rgb(194, 248, 192);
   }
   
   .bot-left {
-    border-top: solid;
+    border: solid;
     border-color: rgb(138, 205, 212, 0.5);
+    background-color: rgb(192, 230, 248);
   }
   
   .bot-right {
-    border-left: solid;
-    border-top: solid;
+    border: solid;
     border-color: rgb(138, 205, 212, 0.5);
+    background-color: rgb(242, 192, 248);
   }
 }
 
