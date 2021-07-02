@@ -150,8 +150,8 @@ header{
 
 .intro{
   width: 100vw;
-  height:80vh;
-  margin: 20vh 0vw 10vh 0vw;
+  height:90vh;
+  margin: 5vh 0vw 10vh 0vw;
   text-align: left;
   color: var(--clr-dark);
   background-image: url("./img/intro.jpg");
@@ -195,6 +195,9 @@ header{
 }
 
 @media screen and (min-width:1500px){
+  .intro{
+    background-size: cover;
+  }
   .intro-columns {
     padding-top: 20vh;
   }
@@ -255,7 +258,6 @@ header{
       display: inline-block;
       margin:0px;
       width: 100vw !important;
-      opacity: 0.8;
   }
 }
 
