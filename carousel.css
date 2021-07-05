@@ -150,69 +150,48 @@ http://flickity.metafizzy.co
 }
 
 .gallery-cell {
-  width: 65vw;
-  height: 75vh;
+  width: 70vw;
+  height: 80vh;
   margin-right: 2vw;
-  /* padding: 0.5vw; */
-  /* background: white; */
   counter-increment: gallery-cell;
   border-style: solid;
   border-color: rgb(138, 205, 212, 0.5);
-  text-align: center;
-  color: black;
+  text-align: left;
+
+  padding: 1.5em;
 }
 
-
-#pain-noladder {
-  display: none;
-}
-
-@media screen and (max-width:780px){
-  #pain-ladder {
-    display: none;
-  }
-  #pain-noladder {
-    display: inline-block;
-  }
-  .gallery-cell {
-    width: 90vw;
-    height: 95vh;
-    padding: 1.5vw;
-  }
-  .cell2{
-    padding-top: 10vh;
-  }
-  .cell3 {
-    padding: 0px !important;
-  }
+.gallery-cell strong {
+  color: #00b4be;
+  font-size: 2em;
 }
 
 .cell1 {
-  padding: 0vh 5vw 0vh 5vw;
+  color: white;
 }
 
-.cell1-box strong {
-  color: #00b4be;
-  font-size: 2.5em;
+.cell1-box {
+  line-height: 5em;
+  margin: 11em 4em 11em 4em;
 }
 
 .cell1-box::after {
   content: "";
-  background-color: blanchedalmond;
+  background-color: rgb(203, 209, 216);
   opacity:0.5;
   top: 25%;
-  left: 7%;
-  bottom: 25%;
-  right: 7%;
+  left: 5%;
+  bottom: 30%;
+  right: 5%;
   position: absolute;
   z-index: -1;   
 }
 
 .cell1::after {
   content: "";
-  background-image: url(./img/cells.jpeg);
+  background-image: url(./img/cells.png);
   background-size: cover;
-  opacity: 0.5;
+  opacity: 1;
   top: 0;
   left: 0;
   bottom: 0;
@@ -221,108 +200,64 @@ http://flickity.metafizzy.co
   z-index: -2;   
 }
 
-
-@media screen and (min-width:1000px){
-  .cell1 {
-    padding: 20vh 5vw 10vh 5vw;
-  }
+.cell2 {
+  color: #696a6d;
 }
 
-.cell2{
-  padding: 0px;
+.cell2-box {
+  line-height: 5em;
+  margin: 5em 3em 5em 3em;
 }
 
 .cell2::after {
   content: "";
-  background-image: url(./img/stair.jpeg);
+  background-image: url(./img/pain.jpg);
   background-size: cover;
-  opacity: 0.3;
+  opacity: 1;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1;   
+  z-index: -2;   
 }
 
 .cell3 {
-  padding: 10vh 10vw 10vh 10vw;
+  color: white;
+}
+
+.cell3-box {
+  line-height: 5em;
+  margin: 3em 35em 5em 3em;
 }
 
 .cell3::after {
   content: "";
-  background-image: url(./img/hospital.jpeg);
+  background-image: url(./img/hospital.jpg);
   background-size: cover;
-  opacity: 0.5;
+  opacity: 1;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
+  z-index: -2;   
+}
+
+.cell3-box::after {
+  content: "";
+  background-color: rgb(151, 156, 163);
+  opacity:0.5;
+  top: 10%;
+  left: 3%;
+  bottom: 25%;
+  right: 45%;
+  position: absolute;
   z-index: -1;   
 }
 
-.gallery-cell h6 {
-  font-size: 3vh;
-  color: #00b4be;
-}
-
-@media screen and (min-width:1300px){
-  .cell3 {
-    padding: 20vh 10vw 20vh 10vw;
-  }
-  .gallery-cell h6 {
-    font-size: 3.1vh;
-  }
-}
-
 .carousel-footer {
-  text-align: left;
   position: absolute;
-  left: 20px;
-  bottom: 5px;
-}
- 
-
-.gallery-cell h2 {
-  color: #00b4be;
-}
-
-.gallery-cell h3 {
-  color: #00b4be;
-}
-
-*, *::before, *::after {
-box-sizing: border-box;
-}
-
-@media screen and (min-width:780px){
-  .top-left {
-    border: solid;
-    border-color: rgb(138, 205, 212, 0.5);
-    background-color: rgb(248, 192, 192);
-  }
-  
-  .top-right {
-    border: solid;
-    border-color: rgb(138, 205, 212, 0.5);
-    background-color: rgb(194, 248, 192);
-  }
-  
-  .bot-left {
-    border: solid;
-    border-color: rgb(138, 205, 212, 0.5);
-    background-color: rgb(192, 230, 248);
-  }
-  
-  .bot-right {
-    border: solid;
-    border-color: rgb(138, 205, 212, 0.5);
-    background-color: rgb(242, 192, 248);
-  }
-}
-
-.ladder {
-  height: 100%;
-  width: 100%;
+  bottom: 10px;
+  text-align: left;
 }
