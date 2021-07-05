@@ -153,7 +153,7 @@ http://flickity.metafizzy.co
   width: 65vw;
   height: 75vh;
   margin-right: 2vw;
-  padding: 1.5vw;
+  /* padding: 0.5vw; */
   /* background: white; */
   counter-increment: gallery-cell;
   border-style: solid;
@@ -188,7 +188,24 @@ http://flickity.metafizzy.co
 }
 
 .cell1 {
-  padding: 10vh 5vw 10vh 5vw;
+  padding: 0vh 5vw 0vh 5vw;
+}
+
+.cell1-box strong {
+  color: #00b4be;
+  font-size: 2.5em;
+}
+
+.cell1-box::after {
+  content: "";
+  background-color: blanchedalmond;
+  opacity:0.5;
+  top: 25%;
+  left: 7%;
+  bottom: 25%;
+  right: 7%;
+  position: absolute;
+  z-index: -1;   
 }
 
 .cell1::after {
@@ -201,13 +218,13 @@ http://flickity.metafizzy.co
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1;   
+  z-index: -2;   
 }
 
 
 @media screen and (min-width:1000px){
   .cell1 {
-    padding: 25vh 5vw 25vh 5vw;
+    padding: 20vh 5vw 10vh 5vw;
   }
 }
 
@@ -277,11 +294,6 @@ http://flickity.metafizzy.co
 
 *, *::before, *::after {
 box-sizing: border-box;
-}
-
-.cell1-col {
-  background-color: rgb(253, 249, 249);
-  padding: 3vh;
 }
 
 @media screen and (min-width:780px){
