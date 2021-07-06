@@ -112,7 +112,7 @@ http://flickity.metafizzy.co
 .flickity-page-dots {
   position: absolute;
   width: 100%;
-  bottom: -25px;
+  bottom: 10px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -124,8 +124,8 @@ http://flickity.metafizzy.co
 
 .flickity-page-dots .dot {
   display: inline-block;
-  width: 1vw;
-  height: 1vw;
+  width: 2em;
+  height: 2em;
   margin: 0 8px;
   background: #00b4be;
   border-radius: 50%;
@@ -157,22 +157,47 @@ http://flickity.metafizzy.co
   border-style: solid;
   border-color: rgb(138, 205, 212, 0.5);
   text-align: left;
-
   padding: 1.5em;
 }
 
 .gallery-cell strong {
   color: #00b4be;
-  font-size: 2em;
+  font-size: 1.8em;
+}
+.cell1-box {
+  line-height: 4em;
+  margin: 8em 2em 8em 2em;
+}
+.cell2-box {
+  line-height: 5em;
+  margin: 5em 3em 5em 3em;
+}
+.cell3-box {
+  line-height: 4em;
+  margin: 3em 15em 5em 2em;
+}
+
+@media screen and (min-width: 1300px) {
+  .gallery-cell strong {
+    color: #00b4be;
+    font-size: 2.3em;
+  }
+  .cell1-box {
+    line-height: 5em;
+    margin: 11em 4em 11em 4em;
+  }
+  .cell2-box {
+    line-height: 6em;
+    margin: 5em 3em 5em 3em;
+  }
+  .cell3-box {
+    line-height: 5em;
+    margin: 3em 35em 5em 3em;
+  }
 }
 
 .cell1 {
   color: white;
-}
-
-.cell1-box {
-  line-height: 5em;
-  margin: 11em 4em 11em 4em;
 }
 
 .cell1-box::after {
@@ -204,11 +229,6 @@ http://flickity.metafizzy.co
   color: #696a6d;
 }
 
-.cell2-box {
-  line-height: 5em;
-  margin: 5em 3em 5em 3em;
-}
-
 .cell2::after {
   content: "";
   background-image: url(./img/pain.jpg);
@@ -224,11 +244,6 @@ http://flickity.metafizzy.co
 
 .cell3 {
   color: white;
-}
-
-.cell3-box {
-  line-height: 5em;
-  margin: 3em 35em 5em 3em;
 }
 
 .cell3::after {
@@ -250,8 +265,8 @@ http://flickity.metafizzy.co
   opacity:0.5;
   top: 10%;
   left: 3%;
-  bottom: 25%;
-  right: 45%;
+  bottom: 15%;
+  right: 30%;
   position: absolute;
   z-index: -1;   
 }
@@ -261,3 +276,41 @@ http://flickity.metafizzy.co
   bottom: 10px;
   text-align: left;
 }
+
+@media screen and (max-width: 767px) {
+  .gallery-cell strong {
+    color: #00b4be;
+    font-size: 1.5em;
+  }
+  .cell1-box {
+    line-height: 3em;
+    margin: 1em 0.1em 1em 0.1em;
+  }
+  .cell2-box {
+    line-height: 3em;
+    margin: 1em 0.1em 1em 0.1em;
+  }
+  .cell3-box {
+    line-height: 3em;
+    margin: 1em 0.1em 1em 0.1em;
+  }
+
+  .cell1-box::after, .cell2-box::after, .cell3-box::after {
+    content: "";
+    background-color: rgb(116, 119, 122);
+    opacity:0.5;
+    top: 3%;
+    left: 2%;
+    bottom: 3%;
+    right: 2%;
+    position: absolute;
+    z-index: -1;   
+  }
+
+  .carousel-footer {
+    position: absolute;
+    bottom: 40px;
+    text-align: left;
+  }
+}
+
