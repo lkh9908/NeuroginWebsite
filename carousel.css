@@ -51,7 +51,7 @@ http://flickity.metafizzy.co
   border: none;
   border-radius: 50%;
   background: white;
-  background: hsla(0, 0%, 100%, 0.75);
+  /* background: #8acdd4; */
   cursor: pointer;
   /* vertically center */
   -webkit-transform: translateY(-50%);
@@ -71,16 +71,16 @@ http://flickity.metafizzy.co
   opacity: 0.6;
 }
 
-.flickity-prev-next-button.previous { left: 10px; }
-.flickity-prev-next-button.next { right: 10px; }
+.flickity-prev-next-button.previous { left: 30px; }
+.flickity-prev-next-button.next { right: 30px; }
 /* right to left */
 .flickity-rtl .flickity-prev-next-button.previous {
   left: auto;
-  right: 10px;
+  right: 30px;
 }
 .flickity-rtl .flickity-prev-next-button.next {
   right: auto;
-  left: 10px;
+  left: 30px;
 }
 
 .flickity-prev-next-button:disabled {
@@ -166,18 +166,18 @@ http://flickity.metafizzy.co
 }
 .cell1-box {
   line-height: 4em;
-  margin: 8em 2em 8em 2em;
+  margin: 8em 3em 8em 3em;
 }
 .cell2-box {
   line-height: 5em;
-  margin: 5em 3em 5em 3em;
+  margin: 4em 1em 5em 1em;
 }
 .cell3-box {
   line-height: 4em;
   margin: 3em 15em 5em 2em;
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1900px) {
   .gallery-cell {
     width: 70vw;
     height: 40vw;
@@ -209,9 +209,9 @@ http://flickity.metafizzy.co
   background-color: rgb(203, 209, 216);
   opacity:0.5;
   top: 25%;
-  left: 5%;
-  bottom: 30%;
-  right: 5%;
+  left: 4%;
+  bottom: 25%;
+  right: 4%;
   position: absolute;
   z-index: -1;   
 }

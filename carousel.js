@@ -3899,11 +3899,14 @@
     PrevNextButton.prototype.onclick = function() {
       // only allow clicks from keyboard
       var focused = document.activeElement;
-      if ( focused && focused == this.element ) {
-        this.onTap();
-      }
+
+      // if ( focused && focused == this.element ) {
+      //   this.onTap();
+      // }
+
+      this.onTap();
     };
-    
+
     // -----  ----- //
     
     PrevNextButton.prototype.enable = function() {
@@ -5104,4 +5107,12 @@
     return Flickity;
     
     }));
+
+    self.setInterval(function clock()
+    {
+      document.querySelector('.flickity-prev-next-button.next').click()
+    },5000);
+    
+    
+    
     

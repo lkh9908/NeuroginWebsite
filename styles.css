@@ -150,7 +150,7 @@ header{
 
 .intro{
   width: 100vw;
-  height:90vh;
+  height:80vh;
   margin: 5vh 0vw 10vh 0vw;
   text-align: left;
   color: var(--clr-dark);
@@ -186,7 +186,7 @@ header{
 @media screen and (min-height:1100px){
   .intro{
     height:50vh;
-    margin-bottom: 30vh;
+    margin-bottom: 20vh;
   }
 }
 
@@ -627,10 +627,10 @@ header{
   max-height: 10vh;
 }
 
-@media screen and (max-width:1300px){
+@media screen and (max-width:1270px){
   .choice {
-    width: 15vw;
-    margin: 1vh 10vw 1vh 10vw;
+    width: 30vw;
+    margin: 1vh 4vw 1vh 4vw;
   }  
 }
 
