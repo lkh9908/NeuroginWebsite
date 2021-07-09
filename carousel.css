@@ -188,7 +188,7 @@ http://flickity.metafizzy.co
   }
   .cell1-box {
     line-height: 5em;
-    margin: 11em 4em 11em 4em;
+    margin: 15em 4em 11em 4em;
   }
   .cell2-box {
     line-height: 6em;
@@ -227,6 +227,33 @@ http://flickity.metafizzy.co
   right: 0;
   position: absolute;
   z-index: -2;   
+}
+
+
+@media screen and (min-width: 1300px) {
+  .cell1-box {
+    line-height: 4em;
+    margin: 10em 6em 10em 6em;
+  }
+  .cell1-box::after {
+    top: 25%;
+    left: 9%;
+    bottom: 28%;
+    right: 9%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .cell1-box {
+    line-height: 4em;
+    margin: 18vh 8em 10em 8em;
+  }
+  .cell1-box::after {
+    top: 25%;
+    left: 9%;
+    bottom: 40%;
+    right: 9%;
+  }
 }
 
 .cell2 {

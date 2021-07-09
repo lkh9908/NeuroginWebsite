@@ -5108,10 +5108,10 @@
     
     }));
 
-    self.setInterval(function clock()
-    {
-      document.querySelector('.flickity-prev-next-button.next').click()
-    },5000);
+    // self.setInterval(function clock()
+    // {
+    //   document.querySelector('.flickity-prev-next-button.next').click()
+    // },5000);
     
     
     
